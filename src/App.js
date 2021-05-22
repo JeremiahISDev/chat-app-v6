@@ -5,12 +5,6 @@ import LogRocket from 'logrocket';
 LogRocket.init('5i2sox/chat-app');
 
 const projectID = 'f52a57ed-a401-422d-905c-07a1846e63af';
-function showNotification(){
-	var notification = new Notification('New Message!',{
-		body: 'You Have A New Chat Message.'
-	})
-
-}
 const App = () => {
   if (!localStorage.getItem('username')) return <LoginForm />;
 
